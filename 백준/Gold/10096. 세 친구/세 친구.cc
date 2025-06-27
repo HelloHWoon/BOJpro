@@ -32,6 +32,11 @@ U가 만들어지는 경우의 수가 여러 개라면 NOT UNIQUE 출력
 
 개수가 홀수인 문자를 찾아 하나씩 빼본다.
 -> 문제 조건을 만족하지만 다른 S가 나온다면 NOT UNIQUE
+
+[만점 받지 못한 이유]
+문자열 길이 N이 큰 경우에 대해 시간 제한을 통과하지 못함.
+이 코드는 string에서 vector<char>로 변경하여 부분 성공한 코드이다.
+vector 대신 string을 사용해도 무방하다.(오히려 그게 더 편함)
 */
 
 bool is_S_exist(string str) {
